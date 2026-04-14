@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quick med</title>
+      <link rel="stylesheet" href="1stpage.css">
+      <script src="1stpage.js"></script>
+    <style>
+          body{
+    margin:0;   
+     background-size: cover;
+    background-repeat: no-repeat;
+      }
+img{
+    width: 500px;
+    height: 400px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
+}
+.clearfix {
+    clear: both;
+}
+     
+   
+    .get-started{
+position: absolute;
+top: 45%;
+left: 40%;
+width: 340px;
+height: 80px;
+background-color:rgb(12, 186, 255);
+border-radius: 70px;
+color: aliceblue;
+text-align: center;
+font-size: 37px;
+cursor: pointer;
+transition: 0.3s; 
+}
+    </style>
+        
+</head>
+<body>
+  
+   <header>
+    <B class="title">QUICK MED</B>
+<button class="button1" onclick="home()">Home</button> 
+<button class="button1" onclick="about()">
+About Us
+</button>
+
+<button class="button1" onclick="services()"> 
+Services 
+</button>
+
+<button class="button1" onclick="contact()"> 
+Register As Doctor
+</button>
+
+<button class="button1" onclick="LOGIN()"> 
+LOGIN 
+</button>
+    </header>
+    <div class="marquee-container">
+  <div class="marquee-text">
+    24/7 Emergency Services Available | For Assistance Call: +91 9492756992 | 2026 Quick Med Healthcare. All Rights Reserved. Copy right case is aligned by the act UGC under 511AC.
+  </div>
+</div>
+
+    <div class="hero-container">
+    <img src="pictures/migrane.jpg">
+      <div class="btn">
+<button class="get-started" onclick="goToPage()">watch a video >></button>
+</div>
+    </div>
+
+<div class="clearfix"></div>
+
+<main class="main-wrapper">
+<h1>Migraine Care & Treatment</h1>
+
+<section>
+    <h2>About Migraine</h2>
+    <p>
+        Migraine is a neurological condition that causes intense headaches, usually on one side of the head.
+        It is often accompanied by symptoms like nausea, vomiting, and sensitivity to light and sound.
+        Triggers include stress, lack of sleep, certain foods, and hormonal changes.
+    </p>
+</section>
+
+<section>
+    <h2>Rest & Recovery</h2>
+    <p>
+        Take proper rest in a quiet and dark room to reduce headache intensity.
+        Avoid loud noises, bright lights, and stressful activities.
+        Relaxation helps in faster recovery.
+    </p>
+</section>
+
+<section>
+    <h2>Hydration</h2>
+    <p>
+        Drink plenty of water to prevent dehydration, which can trigger migraines.
+        Warm fluids and herbal teas may also help in relieving symptoms.
+    </p>
+</section>
+
+<section>
+    <h2>Healthy Diet</h2>
+    <p>
+        Eat regular and balanced meals. Avoid skipping meals as it may trigger headaches.
+        Stay away from caffeine, chocolate, and processed foods if they worsen your symptoms.
+    </p>
+</section>
+
+<section>
+    <h2>Home Remedies</h2>
+    <p>
+        Applying a cold compress on the forehead can reduce pain.
+        Practicing relaxation techniques like deep breathing and meditation may help.
+        Adequate sleep is also important.
+    </p>
+</section>
+
+<section>
+    <h2>Medication</h2>
+    <p>
+        Pain relievers like paracetamol and ibuprofen can help.
+        Specific migraine medicines such as triptans may be used under medical advice.
+        Avoid overuse of medications.
+    </p>
+</section>
+
+<section>
+    <h2>Hygiene & Care</h2>
+    <p>
+        Maintain a regular sleep schedule and avoid stress.
+        Keep track of triggers and try to avoid them.
+        Stay in a calm and comfortable environment.
+    </p>
+</section>
+
+<section class="warning-section">
+    <h2>When to See a Doctor</h2>
+    <p>
+        Consult a doctor if migraines are frequent, severe, or worsen over time.
+        Seek immediate help if there is sudden severe headache, vision problems,
+        confusion, or difficulty in speaking.
+    </p>
+</section>
+
+<section class="medicine-section">
+<h2>Medicines Required</h2>
+<h3>Normal</h3>
+<p>Paracetamol<br>
+Ibuprofen</p>
+<h3>High</h3>
+<p>Sumatriptan<br>
+Naproxen</p>
+<h3>Severe</h3>
+<p>Strong triptans<br>
+Anti-nausea drugs (Domperidone)<br>
+Hospital treatment (if chronic)</p>
+<button class="cart" onclick="window.location.href='bookmedicines.html'">place order</button>
+</section>
+</main>
+
+<script>
+function goToPage(){
+    window.open("https://youtu.be/4frPiq9DJfM?si=S1i15kBQ1tlorXGh", "_blank");
+}
+
+function home() {
+    window.location.href = "1stpageclone.html";
+}
+
+function about() {
+    window.location.href = "about.html";
+}
+
+function services() {
+    window.location.href = "services.html";
+}
+
+function contact() {
+    window.location.href = "contact.html";
+}
+
+function LOGIN() {
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

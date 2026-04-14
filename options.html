@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Med - Choose Your Path</title>
+    <link rel="stylesheet" href="1stpage.css">
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0a2a66;
+            font-size: 42px;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .option-card {
+            background-color: white;
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .option-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .option-card h2 {
+            text-align: center;
+            color: rgb(12, 186, 255);
+            font-size: 28px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid rgb(12, 186, 255);
+        }
+
+        .doctor-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .doctor-card {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            border-radius: 15px;
+            padding: 20px;
+            border-left: 5px solid rgb(12, 186, 255);
+        }
+
+        .doctor-card h3 {
+            color: #0a2a66;
+            margin: 0 0 10px 0;
+            font-size: 20px;
+        }
+
+        .doctor-card p {
+            color: #555;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .doctor-card .specialty {
+            color: rgb(12, 186, 255);
+            font-weight: bold;
+        }
+
+        .book-btn {
+            background-color: rgb(12, 186, 255);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .consult-doctor-card {
+            cursor: pointer;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .consult-doctor-card h2 {
+            color: #0a2a66;
+            border-bottom-color: #0a2a66;
+        }
+
+        .doctor-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        .doctor-desc {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        .view-doctors-btn {
+            background-color: #0a2a66;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 15px 40px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .view-doctors-btn:hover {
+            background-color: red;
+            transform: scale(1.1);
+        }
+
+        .cure-yourself-card {
+            cursor: pointer;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cure-yourself-card h2 {
+            color: #2e7d32;
+            border-bottom-color: #2e7d32;
+        }
+
+        .cure-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        .cure-desc {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        .explore-btn {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 15px 40px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .explore-btn:hover {
+            background-color: red;
+            transform: scale(1.1);
+        }
+
+        .book-medicines-card {
+            cursor: pointer;
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .book-medicines-card h2 {
+            color: #e65100;
+            border-bottom-color: #e65100;
+        }
+
+        .medicine-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        .medicine-desc {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+
+        .order-btn {
+            background-color: #e65100;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 15px 40px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .order-btn:hover {
+            background-color: red;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <b class="title">QUICK MED</b>
+        <button class="button1" onclick="home()">Home</button>
+        <button class="button1" onclick="about()">About Us</button>
+        <button class="button1" onclick="services()">Services</button>
+        <button class="button1" onclick="contact()">Register As Doctor</button>
+        <button class="button1" onclick="LOGIN()">LOGIN</button>
+    </header>
+
+    <div class="marquee-container">
+        <div class="marquee-text">
+            🚨 24/7 Emergency Services Available | For Assistance Call: +91 9492756992 | © 2026 Quick Med Healthcare. All Rights Reserved. Copy right case is aligned by the act UGC under 511AC.
+        </div>
+    </div>
+
+
+    <div class="main-container">
+        <h1>How Can We help You Today?</h1>
+
+        <div class="grid-container">
+       
+            <div class="option-card consult-doctor-card" onclick="goToDoctors()">
+                <h2>👨‍⚕️ Consult a Doctor</h2>
+                <div class="doctor-icon">🩺🏥</div>
+                <p class="doctor-desc">
+                    Connect with experienced doctors.<br>
+                 specialists available.<br>
+                    Book your appointment today!
+                </p>
+                <button class="view-doctors-btn">View Doctors</button>
+            </div>
+
+            <div class="option-card cure-yourself-card" onclick="goToSymptoms()">
+                <h2>🌿 Cure Yourself</h2>
+                <div class="cure-icon">💊🩹</div>
+                <p class="cure-desc">
+                    Explore common symptoms and find home remedies,<br>
+                    first aid tips, and self-care solutions for<br>
+                    Fever, Migraine, Asthma, Skin Allergies, and more.
+                </p>
+                <button class="explore-btn">Explore Symptoms</button>
+            </div>
+
+            <div class="option-card book-medicines-card" onclick="goToBookMedicines()">
+                <h2>📦 Book Medicines</h2>
+                <div class="medicine-icon">💊📋</div>
+                <p class="medicine-desc">
+                    Order medicines online with ease.<br>
+                    Upload prescription or describe your needs.<br>
+                    Fast doorstep delivery available.
+                </p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function home() {
+            window.location.href = "1stpageclone.html";
+        }
+
+        function about() {
+            window.location.href = "about.html";
+        }
+
+        function contact() {
+            window.location.href = "contact.html";
+        }
+
+        function services() {
+            window.location.href = "services.html";
+        }
+
+        function LOGIN() {
+            window.location.href = "LOGIN.html";
+        }
+
+        function goToSymptoms() {
+            window.location.href = "2ndpage.html";
+        }
+
+        function goToBookMedicines() {
+            window.location.href = "bookmedicines.html";
+        }
+
+        function goToDoctors() {
+            window.location.href = "doctors.html";
+        }
+    </script>
+</body>
+</html>

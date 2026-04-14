@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quick med</title>
+      <link rel="stylesheet" href="1stpage.css">
+      <script src="1stpage.js"></script>
+    <style>
+          body{
+    margin:0;   
+     background-size: cover;
+    background-repeat: no-repeat;
+      }
+img{
+    margin-top: 50px;
+    margin-right: 30px;
+    width: 600px;
+    float: left;
+    margin-left: 0;
+}
+.clearfix {
+    clear: both;
+}
+     
+   
+    .get-started{
+position: absolute;
+top: 45%;
+left: 45%;
+width: 340px;
+height: 80px;
+background-color:rgb(12, 186, 255);
+border-radius: 70px;
+color: aliceblue;
+text-align: center;
+font-size: 37px;
+cursor: pointer;
+transition: 0.3s; 
+}
+    </style>
+        
+</head>
+<body>
+  
+   <header>
+    <B class="title">QUICK MED</B>
+<button class="button1" onclick="home()">
+Home
+</button> 
+<button class="button1" onclick="about()">
+About Us
+</button>
+
+<button class="button1" onclick="services()"> 
+Services 
+</button>
+
+<button class="button1" onclick="contact()"> 
+Register As Doctor 
+</button>
+
+<button class="button1" onclick="lOGIN()"> 
+lOGIN 
+</button>
+    </header>
+    <div class="marquee-container">
+  <div class="marquee-text">
+    24/7 Emergency Services Available | For Assistance Call: +91 9492756992 | 2026 Quick Med Healthcare. All Rights Reserved. Copy right case is aligned by the act UGC under 511AC.
+  </div>
+</div>
+
+    <div class="hero-container">
+    <img src="pictures/astama.jpg">
+      <div class="btn">
+<button class="get-started" onclick="goToPage()">watch a video >></button>
+</div>
+    </div>
+
+<div class="clearfix"></div>
+
+<main class="main-wrapper">
+<h1>Asthma Care & Treatment</h1>
+
+<section>
+    <h2>About Asthma</h2>
+    <p>
+        Asthma is a chronic respiratory condition that affects the airways, making breathing difficult.
+        It occurs when the airways become inflamed, narrow, and produce excess mucus.
+        Common triggers include dust, smoke, pollen, cold air, and respiratory infections.
+    </p>
+</section>
+
+<section>
+    <h2>Rest & Recovery</h2>
+    <p>
+        Take proper rest and avoid physical exertion during breathing difficulty.
+        Stay in a clean, dust-free environment and avoid exposure to smoke and allergens.
+        Calm breathing helps reduce asthma symptoms.
+    </p>
+</section>
+
+<section>
+    <h2>Hydration</h2>
+    <p>
+        Drink plenty of warm fluids such as water, soups, and herbal teas.
+        Hydration helps keep airways moist and reduces irritation in the respiratory system.
+    </p>
+</section>
+
+<section>
+    <h2>Healthy Diet</h2>
+    <p>
+        Eat a balanced diet rich in fruits and vegetables to support immunity.
+        Avoid cold drinks, processed foods, and items that may trigger allergies.
+    </p>
+</section>
+
+<section>
+    <h2>Home Remedies</h2>
+    <p>
+        Steam inhalation may help in easing breathing.
+        Warm fluids and ginger-based drinks can soothe the airways.
+        Practice slow and controlled breathing techniques for relief.
+    </p>
+</section>
+
+<section>
+    <h2>Medication</h2>
+    <p>
+        Use inhalers and prescribed medications regularly as advised by a doctor.
+        Do not skip doses and avoid self-medication.
+        Quick-relief inhalers help during sudden asthma attacks.
+    </p>
+</section>
+
+<section>
+    <h2>Hygiene & Care</h2>
+    <p>
+        Keep surroundings clean and free from dust and allergens.
+        Wash bedding regularly and avoid pets or triggers if allergic.
+        Maintain personal hygiene to prevent infections.
+    </p>
+</section>
+
+<section class="warning-section">
+    <h2>When to See a Doctor</h2>
+    <p>
+        Seek immediate medical help if there is severe breathing difficulty,
+        chest tightness, wheezing, or if inhalers do not provide relief.
+        Frequent asthma attacks require proper medical evaluation.
+    </p>
+</section>
+
+<section class="medicine-section">
+<h2>Medicines Required</h2>
+<h3>Normal</h3>
+<p>Salbutamol inhaler<br>
+Steam inhalation</p>
+<h3>High</h3>
+<p>Inhaled corticosteroids (Budesonide)<br>
+Combination inhalers (Formoterol + Budesonide)</p>
+<h3>Severe</h3>
+<p>Nebulization (Salbutamol)<br>
+Oral steroids<br>
+Emergency oxygen support</p>
+<button class="cart" onclick="window.location.href='bookmedicines.html'">place order</button>
+</section>
+</main>
+
+<script>
+function goToPage(){
+    window.open("https://youtu.be/icbuoq5Dc9A?si=t1bqi8BOBf_UhCPp", "_blank");
+}
+
+function home() {
+    window.location.href = "1stpageclone.html";
+}
+
+function about() {
+    window.location.href = "about.html";
+}
+
+function services() {
+    window.location.href = "services.html";
+}
+
+function contact() {
+    window.location.href = "contact.html";
+}
+
+function LOGIN() {
+    window.location.href = "login.html";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Quick Med</title>
+    <link rel="stylesheet" href="1stpage.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            min-height: 100vh;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 900px) {
+            .services-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            border-top: 5px solid rgb(12, 186, 255);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .service-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            color: #0a2a66;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .info-section {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .info-section h2 {
+            color: rgb(12, 186, 255);
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .info-section p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .features-list li {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            padding: 15px 20px;
+            border-radius: 10px;
+            color: #0a2a66;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .features-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .promise-card {
+            background: linear-gradient(135deg, #0a2a66 0%, #1a4a96 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .promise-card h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .promise-card p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #0a2a66;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header style="background: #0a2a66; height: 100px; color: WHITE; font-size: 50PX; text-align: center; line-height: 100px;">
+        Our Services
+    </header>
+
+    <div class="marquee-container">
+        <div class="marquee-text">
+            24/7 Emergency Services Available | For Assistance Call: +91 9492756992 | 2026 Quick Med Healthcare. All Rights Reserved.
+        </div>
+    </div>
+
+    <div class="main-container">
+        <!-- Main Services Grid -->
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"></div>
+                <h3>Fast & Reliable</h3>
+                <p>We provide fast and reliable healthcare services to ensure patients receive timely medical attention and proper care.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"></div>
+                <h3>Online Consultation</h3>
+                <p>Our platform offers online doctor consultations allowing patients to connect with experienced professionals from anywhere.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"></div>
+                <h3>24/7 Emergency</h3>
+                <p>We support 24/7 emergency services to handle critical situations quickly and efficiently.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"></div>
+                <h3>Advanced Technology</h3>
+                <p>Our medical team is equipped with advanced technology to deliver accurate diagnosis and effective treatment.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"></div>
+                <h3>Medicine Delivery</h3>
+                <p>We provide medicine delivery services to ensure patients get their prescriptions without delay.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"></div>
+                <h3>Health Checkups</h3>
+                <p>Regular health checkups and preventive care services to help maintain overall health and well-being.</p>
+            </div>
+        </div>
+
+        <!-- Key Features -->
+        <div class="info-section">
+            <h2>Our Key Services</h2>
+            <ul class="features-list">
+                <li>Easy Appointment Booking</li>
+                <li>Digital Medical Records</li>
+                <li>Online Prescription Services</li>
+                <li>Ambulance Assistance</li>
+                <li>Mental Health Consultation</li>
+                <li>24/7 Patient Support</li>
+            </ul>
+        </div>
+
+        <!-- Specialized Care -->
+        <div class="info-section">
+            <h2>Specialized Care</h2>
+            <p>
+                We provide specialized healthcare services including <strong>cardiology, pediatrics, orthopedics,</strong>
+                and <strong>general medicine</strong> to ensure complete medical support for all patients.
+                Our expert doctors are trained to handle a wide range of health conditions with accuracy and care.
+            </p>
+        </div>
+
+        <!-- Technology -->
+        <div class="info-section">
+            <h2>Technology Driven Healthcare</h2>
+            <p>
+                Quick Med uses modern technology to provide faster diagnosis, secure data handling,
+                and seamless communication between patients and doctors. Our system ensures that all
+                medical records are digitally stored and easily accessible when needed.
+            </p>
+        </div>
+
+        <!-- Promise -->
+        <div class="promise-card">
+            <h2>Our Promise</h2>
+            <p>
+                We promise to deliver high-quality healthcare services with trust, care, and efficiency.
+                Your health and safety are our top priorities.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p> 2026 Quick Med | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

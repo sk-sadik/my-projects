@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quick med</title>
+      <link rel="stylesheet" href="1stpage.css">
+      <script src="1stpage.js"></script>
+    <style>
+          body{
+    margin:0;   
+     background-size: cover;
+    background-repeat: no-repeat;
+      }
+img{
+    width: 500px;
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
+}
+.clearfix {
+    clear: both;
+}
+     
+   
+    .get-started{
+position: absolute;
+top: 45%;
+left: 40%;
+width: 340px;
+height: 80px;
+background-color:rgb(12, 186, 255);
+border-radius: 70px;
+color: aliceblue;
+text-align: center;
+font-size: 37px;
+cursor: pointer;
+transition: 0.3s; 
+}
+    </style>
+        
+</head>
+<body>
+  
+   <header>
+    <B class="title">QUICK MED</B>
+<button class="button1" onclick="home()">
+Home
+</button> 
+<button class="button1" onclick="about()">
+About Us
+</button>
+
+<button class="button1" onclick="services()"> 
+Services 
+</button>
+
+<button class="button1" onclick="contact()"> 
+Register As Doctor 
+</button>
+
+<button class="button1" onclick="LOGIN()"> 
+LOGIN 
+</button>
+    </header>
+    <div class="marquee-container">
+  <div class="marquee-text">
+    24/7 Emergency Services Available | For Assistance Call: +91 9492756992 | 2026 Quick Med Healthcare. All Rights Reserved. Copy right case is aligned by the act UGC under 511AC.
+  </div>
+</div>
+
+    <div class="hero-container">
+    <img src="pictures/skin.jpg">
+      <div class="btn">
+<button class="get-started" onclick="goToPage()">watch a video >></button>
+</div>
+    </div>
+
+<div class="clearfix"></div>
+
+<main class="main-wrapper">
+<h1>Skin Rashes & Allergy Care</h1>
+
+<section>
+    <h2>About Skin Rashes & Allergy</h2>
+    <p>
+        Skin rashes and allergies occur when the skin reacts to irritants, allergens, infections, or environmental factors.
+        Common causes include dust, pollen, food allergies, insect bites, chemicals, and poor hygiene.
+        Symptoms include redness, itching, swelling, dryness, and irritation on the skin.
+    </p>
+</section>
+
+<section>
+    <h2>Rest & Recovery</h2>
+    <p>
+        Avoid scratching or rubbing the affected area as it can worsen the condition.
+        Keep the skin relaxed and avoid exposure to heat, sweat, and irritants.
+        Wearing loose and soft clothing helps reduce irritation.
+    </p>
+</section>
+
+<section>
+    <h2>Hydration</h2>
+    <p>
+        Drink plenty of water to keep the skin hydrated from within.
+        Proper hydration helps in reducing dryness and supports skin healing.
+    </p>
+</section>
+
+<section>
+    <h2>Healthy Diet</h2>
+    <p>
+        Eat a balanced diet rich in fruits and vegetables to boost immunity.
+        Avoid foods that may trigger allergies such as seafood, nuts, or processed foods if sensitive.
+    </p>
+</section>
+
+<section>
+    <h2>Home Remedies</h2>
+    <p>
+        Applying calamine lotion can soothe itching and irritation.
+        Aloe vera gel helps in cooling and healing the skin.
+        Cold compress can reduce swelling and redness.
+    </p>
+</section>
+
+<section>
+    <h2>Medication</h2>
+    <p>
+        Antihistamines like cetirizine can help reduce allergic reactions.
+        Mild steroid creams like hydrocortisone may be used for inflammation.
+        Avoid using strong medications without medical advice.
+    </p>
+</section>
+
+<section>
+    <h2>Hygiene & Care</h2>
+    <p>
+        Keep the affected area clean and dry.
+        Avoid using harsh soaps or chemicals on the skin.
+        Wash hands regularly and avoid contact with allergens.
+    </p>
+</section>
+
+<section class="warning-section">
+    <h2>When to See a Doctor</h2>
+    <p>
+        Consult a doctor if the rash spreads, becomes severe, or does not improve.
+        Seek immediate help if there is swelling of the face, difficulty breathing,
+        or signs of severe allergic reaction.
+    </p>
+</section>
+
+<section class="medicine-section">
+<h2>Medicines Required</h2>
+<h3>Normal</h3>
+<p>Calamine lotion<br>
+Cetirizine</p>
+<h3>High</h3>
+<p>Hydrocortisone cream</p>
+<h3>Severe</h3>
+<p>Strong steroid creams<br>
+Oral steroids<br>
+Immunotherapy (doctor guided)</p>
+<button class="cart" onclick="window.location.href='bookmedicines.html'">place order</button>
+</section>
+</main>
+
+<script>
+function goToPage(){
+    window.open("https://youtu.be/q2Ssqyw7UfM?si=MoDbOhGRrC-AbY_R", "_blank");
+}
+
+function home() {
+    window.location.href = "1stpageclone.html";
+}
+
+function about() {
+    window.location.href = "about.html";
+}
+
+function services() {
+    window.location.href = "services.html";
+}
+
+function contact() {
+    window.location.href = "contact.html";
+}
+
+function LOGIN() {
+    window.location.href = "login.html";
+}
+</script>
+</body>
+</html>

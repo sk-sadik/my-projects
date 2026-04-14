@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Quick Med</title>
+    <link rel="stylesheet" href="1stpage.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            min-height: 100vh;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0a2a66;
+            font-size: 42px;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .intro-card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            margin-bottom: 30px;
+            text-align: center;
+            border-left: 6px solid rgb(12, 186, 255);
+        }
+
+        .intro-card p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .sections-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .sections-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 5px solid rgb(12, 186, 255);
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+        }
+
+        .info-card h2 {
+            color: rgb(12, 186, 255);
+            font-size: 24px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-card p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .info-card ul {
+            color: #555;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+
+        .info-card ul li {
+            margin-bottom: 8px;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #0a2a66 0%, #1a4a96 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .contact-card h2 {
+            color: white;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .contact-card p {
+            font-size: 18px;
+            line-height: 2;
+        }
+
+        .icon {
+            font-size: 28px;
+        }
+
+        footer {
+            background: #0a2a66;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header style="background: #0a2a66; height: 100px; color: WHITE; font-size: 50PX; text-align: center; line-height: 100px;">
+        About Quick Med
+    </header>
+
+    <div class="marquee-container">
+        <div class="marquee-text">
+            🚨 24/7 Emergency Services Available | For Assistance Call: +91 9492756992 | © 2026 Quick Med Healthcare. All Rights Reserved.
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="intro-card">
+            <p>
+                <strong>Quick Med</strong> is a healthcare platform providing fast and reliable medical services.
+                We aim to connect patients with doctors anytime, anywhere. We promote social medical welfare across the nation.
+            </p>
+        </div>
+
+        <div class="sections-grid">
+            <div class="info-card">
+                <h2><span class="icon">🎯</span> Our Mission</h2>
+                <p>To provide affordable and accessible healthcare solutions for everyone.</p>
+            </div>
+
+            <div class="info-card">
+                <h2><span class="icon">👁️</span> Our Vision</h2>
+                <p>To revolutionize healthcare by making medical services simple, fast, and accessible through digital technology.</p>
+            </div>
+
+            <div class="info-card">
+                <h2><span class="icon">⭐</span> Why Choose Us?</h2>
+                <ul>
+                    <li>Fast and easy appointment booking</li>
+                    <li>Trusted doctors</li>
+                    <li>User-friendly interface</li>
+                    <li>Secure data handling</li>
+                    <li>24/7 availability</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h2><span class="icon">🛡️</span> Privacy & Security</h2>
+                <p>We value your privacy and ensure all personal and medical information is protected with secure systems and modern technology.</p>
+            </div>
+
+            <div class="info-card">
+                <h2><span class="icon">👥</span> Our Team</h2>
+                <p>Powered by dedicated doctors, healthcare experts, and developers working together to deliver high-quality services.</p>
+            </div>
+
+            <div class="info-card">
+                <h2><span class="icon">🤝</span> Our Commitment</h2>
+                <p>Committed to improving healthcare by continuously upgrading our platform and adopting new technologies.</p>
+            </div>
+        </div>
+
+        <div class="contact-card">
+            <h2>📞 Contact Us</h2>
+            <p>
+                📍 Location: India <br>
+                📞 Phone: +91 9876543210 <br>
+                📧 Email: support@quickmed.com
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Quick Med | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - Quick Med</title>
+    <link rel="stylesheet" href="1stpage.css">
+    <link rel="stylesheet" href="bookmed.css">
+</head>
+<body>
+<header>
+<b class="title">QUICK MED</b>
+
+</header>
+
+    <div class="marquee-container">
+        <div class="marquee-text">
+            🚨 24/7 Emergency Services Available | For Assistance Call: +91 9492756992 | © 2026 Quick Med Healthcare. All Rights Reserved. Copy right case is aligned by the act UGC under 511AC.
+        </div>
+    </div>
+
+    <div class="main-container">
+        <h1>📅 Book Your Appointment</h1>
+
+        <div class="medicine-card">
+            <h2>📝 Appointment Form</h2>
+
+<form id="appointmentForm" onsubmit="handleSubmit(event)">
+<div class="form-group">
+ <label for="patientName">Enter Name</label>
+<input type="text" id="patientName" name="patientName" required placeholder="Enter your full name">
+</div>
+
+<div class="form-group">
+<label for="patientAge">Enter Age</label>
+<input type="number" id="patientAge" name="patientAge" required placeholder="Enter your age" min="1" max="120">
+</div>
+
+<div class="form-group">
+<label>Enter Gender</label>
+<div class="radio-group">
+<label><input type="radio" name="gender" value="male" required> Male</label>
+<label><input type="radio" name="gender" value="female" required> Female</label>
+<label><input type="radio" name="gender" value="other" required> Other</label>
+</div>
+</div>
+
+<div class="form-group">
+<label for="patientPhone">Enter Phone Number</label>
+<input type="tel" id="patientPhone" name="patientPhone" required placeholder="Enter 10-digit mobile number" pattern="[0-9]{10}">
+</div>
+
+<div class="form-group">
+<label for="appointmentDate">Select Date</label>
+<input type="date" id="appointmentDate" name="appointmentDate" required>
+</div>
+
+<div class="form-group">
+<label for="appointmentTime">Select Time</label>
+<input type="time" id="appointmentTime" name="appointmentTime" required>
+</div>
+
+<div class="form-group">
+<label for="patientSymptoms">Enter Symptoms</label>
+<textarea id="patientSymptoms" name="patientSymptoms" required placeholder="Describe your symptoms or reason for visit"></textarea>
+</div>
+
+<button type="submit" class="submit-btn">Book Appointment</button>
+</form>
+
+</div>
+</div>
+
+<script>
+ function handleSubmit(event) {
+    event.preventDefault();
+    alert("Appointment booked successfully!");
+    document.getElementById('appointmentForm').reset();
+}
+
+function home() {
+window.location.href = "1stpageclone.html";
+        }
+
+        function about() {
+            window.location.href = "about.html";
+        }
+
+        function contact() {
+            window.location.href = "contact.html";
+        }
+
+        function services() {
+            window.location.href = "services.html";
+        }
+
+        function help() {
+            window.location.href = "help.html";
+        }
+
+    </script>
+</body>
+</html>

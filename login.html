@@ -1,0 +1,98 @@
+<!doctype html>
+<head>
+    <title>login page</title>
+     <link rel="stylesheet" href="1stpage.css">
+<style>
+     header{
+            background: #0a2a66;
+          height: 100px;
+          color: WHITE;
+          font-size: 50PX;
+          text-align: center;
+          text-decoration: solid;
+        }
+     
+
+ button{ 
+color: rgb(0, 0, 0); 
+background-color:rgb(12, 186, 255);
+border: 0px;
+ width:100px; 
+ height: 40px;
+ font-size: 19px;
+ cursor: pointer;
+ } 
+button:hover{ 
+ background: red; 
+ color: rgb(255, 255, 255); 
+  transition: 0.8s;
+ transform: scale(1.2);
+ } 
+
+.loginbox {
+   
+    width: 400px;
+    height: 350px;
+background-color:rgb(12, 186, 255);
+font-size: 25px;
+    margin-top: 10%;
+    margin-left: 35%;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+
+.loginbox:hover{
+    transition: 0.8s;
+}
+p{
+    font-size: 20px;
+}
+
+</style>
+</head>
+<body>
+      
+    <header>
+       LOGIN 
+    </header>
+    <div class="loginbox">
+    <center><h1>QUICK MED</h1></center>  
+<center>
+<b>
+
+enter username:  <input type="text" required placeholder="user name" id="name"><br><br>
+enter password:  <input type="password" required placeholder="password" id="pass"><br><br>
+              <button onclick="login()">login</button>
+            </b>  <p>doesnt have account? <a href="register.html">sign up</a></p>
+       </center>
+    </div>
+ <script>
+    function login(){
+let uname=document.getElementById("name").value;
+let password=document.getElementById("pass").value;
+if(uname=="user"&&password=="user"){
+    alert("login successful");
+     window.location.href = "options1.html";
+    return true;
+}
+else if(uname=="admin"&&password=="admin"){
+     alert("login successful");
+      window.location.href = "admin.html";
+     return;
+}
+else if(uname=="doctor"&&password=="doctor"){
+     alert("login successful");
+      window.location.href = "doctorside.html";
+     return;
+}
+
+else{
+    alert("login failed ");
+    return false;
+}
+    }
+ </script>
+ 
+
+</body>

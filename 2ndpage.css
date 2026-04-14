@@ -1,0 +1,15 @@
+<style>
+
+
+.sym{
+transition: 0.3s; 
+
+}
+.sym:hover{
+  transition: 0.8s;
+ transform: scale(1.1);
+ } 
+
+
+
+</style>

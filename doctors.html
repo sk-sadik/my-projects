@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consult a Doctor - Quick Med</title>
+    <link rel="stylesheet" href="1stpage.css">
+    <link rel="stylesheet" href="doctors.css">
+</head>
+<body>
+    <header>
+        <b class="title">QUICK MED</b>
+        <button class="button1" onclick="home()">Home</button>
+        <button class="button1" onclick="about()">About Us</button>
+        <button class="button1" onclick="services()">Services</button>
+        <button class="button1" onclick="contact()">Register As Doctor</button>
+        <button class="button1" onclick="lOGIN()">lOGIN</button>
+    </header>
+
+    <div class="marquee-container">
+        <div class="marquee-text">
+            🚨 24/7 Emergency Services Available | For Assistance Call: +91 9492756992 | © 2026 Quick Med Healthcare. All Rights Reserved. Copy right case is aligned by the act UGC under 511AC.
+        </div>
+    </div>
+
+ 
+
+    <div class="main-container">
+        <h1>Our Doctors</h1>
+
+        <div class="doctors-grid">
+            <div class="doctor-card">
+                <h3>Dr.SHAIK SADIK</h3>
+                <p class="specialty">General Physician</p>
+                <p>Experience: 15+ years</p>
+                <p>Consultation Fee: ₹500</p>
+                <p>Available: Mon-Sat, 9 AM - 6 PM</p>
+                <button class="book-btn" onclick="bookAppointment('Dr.SHAIK SADIK')">Book Appointment</button>
+            </div>
+
+            <div class="doctor-card">
+                <h3>Dr. SHAIK SIDDIK</h3>
+                <p class="specialty">Cardiologist</p>
+                <p>Experience: 12+ years</p>
+                <p>Consultation Fee: ₹800</p>
+                <p>Available: Mon-Fri, 10 AM - 5 PM</p>
+                <button class="book-btn" onclick="bookAppointment('Dr. SHAIK SIDDIK')">Book Appointment</button>
+            </div>
+
+            <div class="doctor-card">
+                <h3>Dr.Vijay </h3>
+                <p class="specialty">ENT Specialist</p>
+                <p>Experience: 10+ years</p>
+                <p>Consultation Fee: ₹600</p>
+                <p>Available: Mon-Sat, 9 AM - 7 PM</p>
+                <button class="book-btn" onclick="bookAppointment('Dr.Vijay ')">Book Appointment</button>
+            </div>
+
+            
+
+        </div>
+    </div>
+
+    <div id="appointmentModal" class="form-modal">
+        <div class="form-container">
+
+            <h2> Book Appointment</h2>
+            <p id="selectedDoctor" style="text-align: center; color: rgb(12, 186, 255); font-weight: bold; margin-bottom: 20px;"></p>
+            
+            
+        </div>
+    </div>
+
+    <script>
+        function home() {
+            window.location.href = "1stpageclone.html";
+        }
+
+        function about() {
+            window.location.href = "about.html";
+        }
+
+        function contact() {
+            window.location.href = "contact.html";
+        }
+
+        function services() {
+            window.location.href = "services.html";
+        }
+
+        function lOGIN() {
+            window.location.href = "lOGIN.html";
+        }
+
+        
+
+        function bookAppointment(doctorName) {
+              window.location.href = "appointment.html";
+          }
+
+     
+
+       
+    </script>
+</body>
+</html>
