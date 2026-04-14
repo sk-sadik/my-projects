@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quick med</title>
+      <link rel="stylesheet" href="1stpage.css">
+      <script src="1stpage.js"></script>
+    <style>
+          body{
+            margin-top: 0px;   
+            margin-left: 0px;
+     background-size: cover;
+    background-repeat: no-repeat;
+      }
+
+     
+   
+    .get-started{
+position: absolute;
+top: 45%;
+left: 40%;
+width: 340px;
+height: 80px;
+background-color:rgb(12, 186, 255);
+border-radius: 70px;
+color: aliceblue;
+text-align: center;
+font-size: 37px;
+cursor: pointer;
+transition: 0.3s; 
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+    </style>
+        
+</head>
+<body>
+  
+   <header>
+    <B class="title">QUICK MED</B>
+<button class="button1" onclick="home()">
+Home
+</button> 
+<button class="button1" onclick="about()">
+About Us
+</button>
+
+<button class="button1" onclick="services()"> 
+Services 
+</button>
+
+<button class="button1" onclick="contact()"> 
+Register As Doctor
+</button>
+
+<button class="button1" onclick="LOGIN()"> 
+LOGIN 
+</button>
+    </header>
+    <div class="marquee-container">
+  <div class="marquee-text">
+    24/7 Emergency Services Available | For Assistance Call: +91 9492756992 | 2026 Quick Med Healthcare. All Rights Reserved. Copy right case is aligned by the act UGC under 511AC.
+  </div>
+</div>
+
+<button class="back-btn" onclick="history.back()">←</button>
+
+    <div class="hero-container">
+    <div class="clearfix"></div>
+    <img src="pictures/fever1.jpg">
+      <div class="btn">
+<button class="get-started" onclick="goToPage()">watch a video >></button>
+</div>
+    </div>
+
+<div class="clearfix"></div>
+
+<main>
+<h1>Fever Care & Treatment</h1>
+
+<section>
+    <h2>About Fever</h2>
+    <p>
+        Fever is a temporary increase in body temperature that usually occurs when the body is fighting an infection.
+        It is not a disease but a symptom of underlying health conditions such as viral or bacterial infections.
+    </p>
+</section>
+
+<section>
+    <h2>Rest & Recovery</h2>
+    <p>
+        Taking proper rest is essential during fever. It helps the body conserve energy and fight infections more effectively.
+        Ensure you get enough sleep and avoid physical exertion.
+    </p>
+</section>
+
+<section>
+    <h2>Hydration</h2>
+    <p>
+        Drink plenty of fluids such as water, coconut water, soups, and fresh juices. Staying hydrated helps regulate body temperature
+        and prevents dehydration caused by sweating.
+    </p>
+</section>
+
+<section>
+    <h2>Healthy Diet</h2>
+    <p>
+        Eat light and easily digestible food like rice, fruits, and boiled vegetables. Avoid oily, spicy, and heavy foods
+        as they can slow down digestion and recovery.
+    </p>
+</section>
+
+<section>
+    <h2>Temperature Control</h2>
+    <p>
+        Wear light clothing and keep the room cool. Use a lukewarm sponge or apply a wet cloth on the forehead to help reduce body temperature.
+        Avoid extremely cold baths.
+    </p>
+</section>
+
+<section>
+    <h2>Medication</h2>
+    <p>
+        Paracetamol can be used to reduce fever and relieve discomfort. Always follow the recommended dosage and avoid self-medication.
+        Do not take antibiotics unless prescribed by a doctor.
+    </p>
+</section>
+
+<section>
+    <h2>Hygiene & Care</h2>
+    <p>
+        Maintain personal hygiene by washing hands regularly and keeping your surroundings clean.
+        Avoid sharing personal items to prevent the spread of infection.
+    </p>
+</section>
+
+<section class="warning-section">
+    <h2>When to See a Doctor</h2>
+    <p>
+        Seek medical attention if the fever is above 103°F (39.4°C), lasts more than 3 days,
+        or is accompanied by severe symptoms such as breathing difficulty, persistent vomiting,
+        chest pain, confusion, or seizures.
+    </p>
+</section>
+
+<section class="medicine-section">
+<h2>Medicines Required</h2>
+<h3>Normal</h3>
+<p>Paracetamol<br>
+Ibuprofen<br>
+ORS (Oral Rehydration Solution)</p>
+<h3>High</h3>
+<p>Paracetamol (higher dose as prescribed)<br>
+Ibuprofen / Naproxen<br>
+Antibiotics (only if bacterial – doctor prescribed)</p>
+<h3>Severe</h3>
+<p>IV fluids (hospital)<br>
+Strong antibiotics (doctor only)<br>
+Antiviral drugs (if required)</p>
+   <button class="cart" onclick="window.location.href='bookmedicines.html'">place order</button>
+</section>
+</main>
+
+<script>
+function goToPage(){
+    window.open("https://youtu.be/Ne9DL27eyEo?si=prMNNsZIueYwxSev", "_blank");
+}
+</script>
+</body>
+</html>

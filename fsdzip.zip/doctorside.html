@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard - Quick Med</title>
+    <link rel="stylesheet" href="1stpage.css">
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0a2a66;
+            font-size: 42px;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            justify-content: center;
+            align-items: start;
+        }
+
+        @media (max-width: 900px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .dashboard-card {
+            background-color: white;
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-align: center;
+           
+        }
+
+        .dashboard-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+        }
+
+        .dashboard-card h2 {
+            color: rgb(12, 186, 255);
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .card-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .card-count {
+            font-size: 48px;
+            font-weight: bold;
+            color: #0a2a66;
+            margin: 20px 0;
+        }
+
+        .card-description {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .content-area {
+            margin-top: 40px;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            display: none;
+        }
+
+        .content-area.active {
+            display: block;
+        }
+
+        .content-area h3 {
+            color: #0a2a66;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .no-data {
+            text-align: center;
+            color: #888;
+            font-size: 20px;
+            padding: 40px;
+        }
+
+        .back-btn {
+            background-color: rgb(12, 186, 255);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 12px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <b class="title">QUICK MED</b>
+        
+    </header>
+
+    <div class="marquee-container">
+        <div class="marquee-text">
+            🚨 24/7 Emergency Services Available | For Assistance Call: +91 9492756992 | © 2026 Quick Med Healthcare. All Rights Reserved. Copy right case is aligned by the act UGC under 511AC.
+        </div>
+    </div>
+
+    <div class="main-container">
+        <h1>👨‍⚕️ Doctor Dashboard</h1>
+
+        <div class="grid-container">
+        
+            <div class="dashboard-card" onclick="showAppointments()">
+                <div class="card-icon">📅</div>
+                <h2>My Appointments</h2>
+                <div class="card-count" id="appointmentCount">0</div>
+                <div class="card-description">Click to view your appointments</div>
+            </div>
+
+          
+            <div class="dashboard-card" onclick="showConnected()">
+                <div class="card-icon">👥</div>
+                <h2>People Connected</h2>
+                <div class="card-count" id="connectedCount">0</div>
+                <div class="card-description">Total patients connected today</div>
+            </div>
+
+            <div class="dashboard-card" onclick="showHistory()">
+                <div class="card-icon">📜</div>
+                <h2>Previous History</h2>
+                <div class="card-count" id="historyCount">0</div>
+                <div class="card-description">Click to view past records</div>
+            </div>
+        </div>
+        <div id="contentArea" class="content-area">
+            <h3 id="contentTitle"></h3>
+            <div id="contentBody"></div>
+            <div style="text-align: center;">
+                <button class="back-btn" onclick="hideContent()">Back to Dashboard</button>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>

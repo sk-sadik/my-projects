@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Medicines - Quick Med</title>
+    <link rel="stylesheet" href="1stpage.css">
+    <link rel="stylesheet" href="bookmed.css">
+    
+</head>
+<body>
+<header>
+<b class="title">QUICK MED</b>
+<button class="button1" onclick="home()">Home</button>
+<button class="button1" onclick="about()">About Us</button>
+<button class="button1" onclick="services()">Services</button>
+<button class="button1" onclick="contact()">Register As Doctor</button>
+<button class="button1" onclick="lOGIN()">lOGIN</button>
+</header>
+
+    <div class="marquee-container">
+        <div class="marquee-text">
+            🚨 24/7 Emergency Services Available | For Assistance Call: +91 9492756992 | © 2026 Quick Med Healthcare. All Rights Reserved. Copy right case is aligned by the act UGC under 511AC.
+        </div>
+    </div>
+
+    
+
+    <div class="main-container">
+        <h1>📦 Book Your Medicines</h1>
+
+        <div class="medicine-card">
+            <h2>📝 Medicine Order Form</h2>
+
+<form id="medicineForm" onsubmit="submitForm(event)">
+<div class="form-group">
+ <label for="name">Enter Name</label>
+<input type="text" id="name" name="name" required placeholder="Enter your full name">
+</div>
+
+<div class="form-group">
+<label for="age">Enter Age</label>
+<input type="text" id="age" name="age"  placeholder="Enter your age">
+</div>
+
+<div class="form-group">
+<label>Enter Gender</label>
+<div class="radio-group">
+<label><input type="radio" name="gender" value="male" required> Male</label>
+<label><input type="radio" name="gender" value="female" required> Female</label>
+                    </div>
+</div>
+<div class="form-group">
+<label for="mobile">Enter Mobile No</label>
+<input type="text" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number">
+</div>
+<div class="form-group">
+<label for="area">Enter Area/Locality</label>
+<input type="text" id="area" name="area" required placeholder="Enter your area or locality">
+                </div>
+<div class="form-group">
+<label for="medicines">Enter the Medicines</label>
+<textarea id="medicines" name="medicines" required placeholder="List the medicines you need (e.g., Paracetamol 500mg - 10 tablets, etc.)"></textarea>
+</div>
+ <div class="form-group">
+                   <label>Do you have Prescription?</label>
+                   <div class="radio-group">
+<label><input type="radio" name="prescription" value="yes" required> Yes</label>
+<label><input type="radio" name="prescription" value="no" required> No</label>
+</div>
+</div>
+<button type="submit" class="submit-btn">Submit Order</button>
+</form>
+
+</div>
+</div>
+<script>
+function home() {
+window.location.href = "1stpageclone.html";
+        }
+
+        function about() {
+            window.location.href = "about.html";
+        }
+
+        function contact() {
+            window.location.href = "contact.html";
+        }
+
+        function services() {
+            window.location.href = "services.html";
+        }
+
+        function lOGIN() {
+            window.location.href = "lOGIN.html";
+        }
+
+       
+    </script>
+</body>
+</html>

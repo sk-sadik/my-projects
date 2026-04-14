@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+    <head>
+<title>register </title>
+ <link rel="stylesheet" href="bookmed.css">
+    <STYLE>
+        .pics{
+            display: flex;
+             gap: 100px;
+            
+        }
+    
+        header{
+            background: #0a2a66;
+          height: 100px;
+          color: WHITE;
+          font-size: 50PX;
+          text-align: center;
+          text-decoration: solid;
+        }
+        body{
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+    </STYLE>
+
+</head>
+
+<body>
+    <header>
+       Register Now
+    </header>
+   
+    <hr>
+    
+    <div class="main-container">
+      
+
+        <div class="medicine-card">
+            <h2>📝REGISTER FORM</h2>
+
+<form id="medicineForm" onsubmit="submitForm(event)">
+<div class="form-group">
+ <label for="name">Enter Name</label>
+<input type="text" id="name" name="name" required placeholder="Enter your full name">
+</div>
+
+<div class="form-group">
+<label for="pass">Enter password</label>
+<input type="password" id="pass1" name="pass" placeholder="create a strong password">
+</div>
+
+<div class="form-group">
+<label for="pass">Confirm password</label>
+<input type="password" id="pass2" name="pass" placeholder="Password should match">
+</div>
+
+
+
+<div class="form-group">
+<label for="mobile">Enter e-mail id</label>
+<input type="text" id="mobile" name="mobile" placeholder="Enter a valid mail id">
+</div>
+
+
+
+<button type="submit" class="submit-btn">Submit form</button>
+</form>
+
+</div>
+</div>
+<script>
+    p1=document.getElementById("pass1").value;
+    p2=document.getElementById("pass2").value;
+      if (p1 !== "" && p2 !== "") {
+    if(pass1==pass2){
+        alert("successfully registered")
+    }
+    else{
+        alert("passwords doesnt matched");
+    }
+}
+</script>
+
+    
+</body>
+
+
+</html>

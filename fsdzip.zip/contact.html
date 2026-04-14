@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+<title>contact us</title>
+ <link rel="stylesheet" href="bookmed.css">
+    <STYLE>
+        .pics{
+            display: flex;
+             gap: 100px;
+            
+        }
+    
+        header{
+            background: #0a2a66;
+          height: 100px;
+          color: WHITE;
+          font-size: 50PX;
+          text-align: center;
+          text-decoration: solid;
+        }
+        body{
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+    </STYLE>
+
+</head>
+
+<body>
+    <header>
+        CONTACT US
+    </header>
+    
+
+    <hr>
+    
+    <div class="main-container">
+        <h1>REGISTER AS DOCTOR</h1>
+
+        <div class="medicine-card">
+            <h2>📝REGISTER FORM</h2>
+
+<form id="medicineForm" onsubmit="submitForm(event)">
+<div class="form-group">
+ <label for="name">Enter Name</label>
+<input type="text" id="name" name="name" required placeholder="Enter your full name">
+</div>
+
+<div class="form-group">
+<label for="age">Enter Age</label>
+<input type="text" id="age" name="age"  placeholder="Enter your age">
+</div>
+
+<div class="form-group">
+<label>Enter Gender</label>
+<div class="radio-group">
+<label><input type="radio" name="gender" value="male" required> Male</label>
+<label><input type="radio" name="gender" value="female" required> Female</label>
+                    </div>
+</div>
+<div class="form-group">
+<label for="mobile">Enter Mobile No</label>
+<input type="text" id="mobile" name="mobile" placeholder="Enter 10-digit mobile number">
+</div>
+<div class="form-group">
+<label for="area">Enter Area/Locality</label>
+<input type="text" id="area" name="area" required placeholder="Enter your area or locality">
+                </div>
+<div class="form-group">
+<label for="medicines">Enter the  domains which you are specialist</label>
+<textarea id="medicines" name="medicines" required "></textarea>
+</div>
+ <div class="form-group">
+                   <label>Do you have any previous expierence?</label>
+                   <div class="radio-group">
+<label><input type="radio" name="prescription" value="yes" required> Yes</label>
+<label><input type="radio" name="prescription" value="no" required> No</label>
+</div>
+</div>
+<button type="submit" class="submit-btn">Submit form</button>
+</form>
+
+</div>
+</div>
+
+
+    
+</body>
+
+
+</html>

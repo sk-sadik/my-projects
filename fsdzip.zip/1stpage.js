@@ -9,7 +9,7 @@ function services(){
     window.location.href = "services.html";
 }
 function home(){
-    window.location.href = "index.html";
+    window.location.href = "1stpageclone.html";
 }
 function help(){
     window.location.href = "help.html";
